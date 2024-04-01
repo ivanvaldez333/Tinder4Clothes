@@ -1,7 +1,11 @@
 Tinder4Clothes
-A side project involving using flutter and web-scrapping to create a Tinder clone with instead of people it would be clothes
+A side project involving using flutter and web-scrapping to create a Tinder clone instead of people it would be clothes
 
-We have used Figma to design the overall skeleton of the application. Involving the tinder mirrored front page
+We have used Figma to design the overall skeleton of the application. Involving the Tinder mirrored front page
+
+Current Websites to Webscrap
+-----------------------------------
+Nike
 
 TODO:
 - Use Flutter and Design the FrontEnd
