@@ -37,7 +37,6 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text(appState.current.asLowerCase),
           Container(
             margin: EdgeInsets.only(
                 top: 90.0, left: 40.0, right: 40.0, bottom: 30.0),
@@ -48,36 +47,49 @@ class MyHomePage extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(10.0)),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  print('button pressed!');
-                },
-                style: ElevatedButton.styleFrom(
-                    shape: CircleBorder(), padding: EdgeInsets.all(35)),
-                child: Text('Pass'),
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            ElevatedButton(
+              onPressed: () {
+                print('button pressed!');
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+                shape: CircleBorder(),
+                fixedSize: Size.fromWidth(120),
+                padding: EdgeInsets.all(35),
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
               ),
-              ElevatedButton(
+              child: Icon(Icons.clear_outlined, size: 24.0),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print('button pressed!');
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white,
+                  shape: CircleBorder(),
+                  fixedSize: Size.fromWidth(120),
+                  padding: EdgeInsets.all(35),
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+              child: Icon(Icons.star, size: 24.0),
+            ),
+            ElevatedButton(
                 onPressed: () {
                   print('button pressed!');
                 },
                 style: ElevatedButton.styleFrom(
-                    shape: CircleBorder(), padding: EdgeInsets.all(35)),
-                child: Text('Super Like'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  print('button pressed!');
-                },
-                style: ElevatedButton.styleFrom(
-                    shape: CircleBorder(), padding: EdgeInsets.all(35)),
-                child: Text('Like'),
-              )
-            ]
-            
-          ),
+                    backgroundColor: Colors.red,
+                    foregroundColor: Colors.white,
+                    shape: CircleBorder(),
+                    fixedSize: Size.fromWidth(120),
+                    padding: EdgeInsets.all(35),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    ),
+                child: Icon(Icons.favorite, size: 24.0))
+          ]),
         ],
       ),
     );
